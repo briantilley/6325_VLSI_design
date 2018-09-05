@@ -5,7 +5,8 @@
 module decoder4(
     output out, 
     input clk,
-    input clr, 
+    input clr,
+    input enable, 
     input sig, 
     input prgm);
 
@@ -19,13 +20,14 @@ module decoder4(
     wire [3:0] a, b;
 
     // instantiate submodules
+    
     // PROGRAM register
-    SIPO prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a));
+    SIPO prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a), .enable(enable));
 
     // SIGNAL register
-    SIPO sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b));
+    SIPO sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b), .enable(1'b1));
 
     // comparator
-    comp4 comparator(.eq(out), .a(a), .b(a));
+    comp4 comparator(.eq(out), .a(a), .b(b));
 
 endmodule

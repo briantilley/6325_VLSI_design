@@ -1,8 +1,8 @@
 
 
-module SIPO(clk,clear, in, out);
+module SIPO(clk, clear, enable, in, out);
 
-input in,clk,clear;
+input in,clk,clear,enable;
 
 output [3:0] out;
 
@@ -10,22 +10,17 @@ reg [3:0] tmp;
 
 reg [3:0] out;
 
-always @(posedge clk)
+always @(posedge clk) begin
+  if (clear) begin
+    tmp <= 4'b0000;
+  end
 
-begin
+  else if(enable) begin
+    tmp <= tmp << 1;
+    tmp[0] <= in;
+  end
 
-if (clear)
-
-tmp <= 4'b0000;
-
-else
-
-tmp <= tmp << 1;
-
-tmp[0] <= in;
-
-out = tmp;
-
+  out = tmp;
 end
 
 endmodule
