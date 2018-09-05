@@ -11,7 +11,7 @@ module comp4(eq, a, b);
 
 	// a and b must be bitwise equal
 	// ^ (XOR) operator applies to corresponding bits
-	// ~& (NAND) operator indicates all bits of the result must be 0
-  assign eq = ~& (a ^ b);
+	// ~| (NOR) operator indicates all bits of the result must be 0
+  assign eq = ~| (a ^ b);
 
 endmodule

@@ -3,29 +3,35 @@
 module comp4_tb;
   
 	// module inputs
-	reg [3:0] a, b;
+	reg [3:0] _a, _b;
 
 	// module output
-	wire eq;
+	wire _eq;
 
 	// instantiate
-	comp4 uut (.eq(eq), .a(a), .b(b));
+	comp4 uut (.eq(_eq), .a(_a), .b(_b));
 
 	// initialize
 	initial begin
-		a = 0; b = 0;
-		#100;
+		_a = 0; _b = 0;
 	end
 
 	// test a few
 	initial begin
-		
-		#10 a = 1;
-		#10 b = 1;
-		#10 a = 7;
-		#10 b = 7;
-		#10 a = 6;
-		#10 b = 12;
+	  
+		#10 _a = 1;
+		#10 _b = 1;
+		#10 _b = 3;
+		#10 _a = 3;
+		#10 _b = 5;
+		#10 _a = 5;
+		#10 _a = 7;
+		#10 _b = 7;
+		#10 _b = 9;
+		#10 _a = 10;
+		#10 _b = 10;
+		#10 _a = 9;
+		#10 _b = 9;
 		
 	end
 endmodule
