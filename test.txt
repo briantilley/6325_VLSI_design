@@ -1,1 +1,0 @@
-This a test to push this test.txt file to git from NoMachine.
