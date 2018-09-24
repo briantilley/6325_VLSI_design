@@ -4,7 +4,7 @@ module SIPO256(clk, clear, enable, in, out);
 	input in,clk,clear,enable;
 	output wire [SIZE-1:0] out;
 
-	wire clear_not, en_not
+	wire clear_not, en_not;
 	assign clear_not = !clear;
 	assign en_not = !enable; 
 
