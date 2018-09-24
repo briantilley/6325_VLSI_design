@@ -1,6 +1,6 @@
 
 
-module SIPO(clk, clear, enable, in, out);
+module SIPO256(clk, clear, enable, in, out);
 
 input in,clk,clear,enable;
 

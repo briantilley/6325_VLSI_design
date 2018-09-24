@@ -17,17 +17,17 @@ module decoder4(
     // wire out;
 
     // inputs to comparator
-    wire [3:0] a, b;
+    wire [255:0] a, b;
 
     // instantiate submodules
     
     // PROGRAM register
-    SIPO prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a), .enable(enable));
+    SIPO256 prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a), .enable(enable));
 
     // SIGNAL register
-    SIPO sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b), .enable(1'b1));
+    SIPO256 sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b), .enable(1'b1));
 
     // comparator
-    comp4 comparator(.eq(out), .a(a), .b(b));
+    comp256 comparator(.eq(out), .a(a), .b(b));
 
 endmodule
