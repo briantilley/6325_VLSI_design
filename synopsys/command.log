@@ -41795,3 +41795,6 @@ gui_start
 #@ 
 #@ # -- End source /proj/cad/synopsys/syn_vL-2016.03-SP3/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
+read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/synopsys/total_decoder1024.v}
+compile -exact_map -ungroup_all -auto_ungroup area -only_design_rule
+uplevel #0 { report_cell }
