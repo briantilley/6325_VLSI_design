@@ -2,7 +2,7 @@
 // `include "SIPO.v"
 `timescale 1ns/1ps
 
-module decoder256(
+module decoder1024(
     output out, 
     input clk,
     input clr,
@@ -17,17 +17,17 @@ module decoder256(
     // wire out;
 
     // inputs to comparator
-    wire [255:0] a, b;
+    wire [1023:0] a, b;
 
     // instantiate submodules
     
     // PROGRAM register
-    SIPO256 prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a), .enable(enable));
+    SIPO1024 prgm_register(.clk(clk), .clear(clr), .in(prgm), .out(a), .enable(enable));
 
     // SIGNAL register
-    SIPO256 sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b), .enable(1'b1));
+    SIPO1024 sig_prgm_register(.clk(clk), .clear(clr), .in(sig), .out(b), .enable(1'b1));
 
     // comparator
-    comp256 comparator(.eq(out), .a(a), .b(b));
+    comp1024 comparator(.eq(out), .a(a), .b(b));
 
 endmodule

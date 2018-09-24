@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 
-module comp256(eq, a, b);
+module comp1024(eq, a, b);
 
-	// 256-bit bus inputs
-	parameter N = 256;
+	// 1024-bit bus inputs
+	parameter N = 1024;
 	input [N-1:0] a, b;
 	
 	// single true/false output for equality

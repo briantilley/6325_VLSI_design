@@ -1,6 +1,6 @@
 module SIPO256(clk, clear, enable, in, out);
 
-	parameter SIZE = 256;
+	parameter SIZE = 1024;
 	input in,clk,clear,enable;
 	output wire [SIZE-1:0] out;
 
