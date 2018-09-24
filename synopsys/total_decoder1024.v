@@ -1,98 +1,3 @@
-module inv(in, out);
-input in;
-output out;
-assign out = ~in;
-endmodule
-
-module nand2(a, b, out);
-input a, b;
-output out;
-assign out = ~(a & b);
-endmodule
-
-module nand3(a, b, c, out);
-input a, b, c;
-output out;
-assign out = ~(a & b & c);
-endmodule
-
-module nand4(a, b, c, d, out);
-input a, b, c, d;
-output out;
-assign out = ~(a & b & c & d);
-endmodule
-
-module nor2(a, b, out);
-input a, b;
-output out;
-assign out = ~(a | b);
-endmodule
-
-module nor3(a, b, c, out);
-input a, b, c;
-output out;
-assign out = ~(a | b | c);
-endmodule
-
-module xor2(a, b, out);
-input a, b;
-output out;
-assign out = (a ^ b);
-endmodule
-
-module aoi12(a, b, c, out);
-input a, b, c;
-output out;
-assign out = ~(a | (b & c));
-endmodule
-
-module aoi22(a, b, c, d, out);
-input a, b, c, d;
-output out;
-assign out = ~((a & b) | (c & d));
-endmodule
-
-module oai12(a, b, c, out);
-input a, b, c;
-output out;
-assign out = ~(a & (b | c));
-endmodule
-
-module oai22(a, b, c, d, out);
-input a, b, c, d;
-output out;
-assign out = ~((a | b) & (c | d));
-endmodule
-
-module dff( d, gclk, rnot, q);
-input d, gclk, rnot;
-output q;
-reg q;
-always @(posedge gclk or negedge rnot)
-  if (rnot == 1'b0)
-    q = 1'b0;
-  else
-    q = d;
-endmodule
-
-
-`timescale 1ns/1ps
-
-module comp1024(eq, a, b);
-
-	// 1024-bit bus inputs
-	parameter N = 1024;
-	input [N-1:0] a, b;
-	
-	// single true/false output for equality
-	output wire eq;
-
-	// a and b must be bitwise equal
-	// ^ (XOR) operator applies to corresponding bits
-	// ~| (NOR) operator indicates all bits of the result must be 0
-  assign eq = ~| (a ^ b);
-
-endmodule
 module SIPO1024(clk, clear, enable, in, out);
 
 	parameter SIZE = 1024;
@@ -117,6 +22,23 @@ module SIPO1024(clk, clear, enable, in, out);
 		assign or_signal[bit] = d_gated[bit] | q_gated[bit];
 		dff single_DFF(.d(or_signal[bit]), .gclk(clk), .rnot(clear_not), .q(out[bit]));
 	end endgenerate
+endmodule
+`timescale 1ns/1ps
+
+module comp1024(eq, a, b);
+
+	// 1024-bit bus inputs
+	parameter N = 1024;
+	input [N-1:0] a, b;
+	
+	// single true/false output for equality
+	output wire eq;
+
+	// a and b must be bitwise equal
+	// ^ (XOR) operator applies to corresponding bits
+	// ~| (NOR) operator indicates all bits of the result must be 0
+  assign eq = ~| (a ^ b);
+
 endmodule
 // `include "comparator.v"
 // `include "SIPO.v"
