@@ -1,4 +1,4 @@
-module SIPO256(clk, clear, enable, in, out);
+module SIPO1024(clk, clear, enable, in, out);
 
 	parameter SIZE = 1024;
 	input in,clk,clear,enable;
