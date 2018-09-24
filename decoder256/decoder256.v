@@ -2,7 +2,7 @@
 // `include "SIPO.v"
 `timescale 1ns/1ps
 
-module decoder4(
+module decoder256(
     output out, 
     input clk,
     input clr,
