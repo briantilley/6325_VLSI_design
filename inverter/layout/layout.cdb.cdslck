@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      exh150330
+HostName                       engnx03.utdallas.edu
+ProcessIdentifier              39417
+ProcessCreationTime_UTC        1539052386
+ProcessCreationTime_Readable   Mon Oct  8 21:33:06 2018 CDT
+AppIdentifier                  /proj/cad/cadence/ic-5.141.usr5.lnx86/tools/dfII/bin/icfb.exe
+OSType                         lnx86
+ReasonForPlacingEditLock       XXsave write lock
+FilePathUsedToEditLock         /home/011/e/ex/exh150330/cad/cadence/project3/inverter/layout/layout.cdb
+TimeEditLocked                 Mon Oct  8 22:59:19 2018 CDT
