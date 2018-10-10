@@ -1,17 +1,15 @@
-$example HSPICE setup file
-
 $transistor model
-.include "~/cad/spice/model013.lib"
-.include invlvs.sp
+.include model013.lib_inc
+.include "./../inverter/invlvs.sp"
 
 .global vdd! gnd!
 .option post runlvl=5
 
-xi in out inv
+xi in out inverter
 
 vdd vdd! gnd! 1.2v
 vin in gnd! pwl(0ns 1.2v 1ns 1.2v 1.05ns 0v 6ns 0v 6.05ns 1.2v 12ns 1.2v)
-cout out gnd! 100f
+cout out gnd! 80f
 
 $transient analysis
 .tr 100ps 12ns
