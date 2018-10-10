@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version L-2016.03-SP3 for linux64 -- Jul 18, 2016
-#@ # Date:   Sun Sep 23 18:39:20 2018
+#@ # Date:   Mon Sep 24 05:14:56 2018
 #@ # Run by: exh15033@engnx03.utdallas.edu
 #@ 
 
@@ -41795,30 +41795,6 @@ gui_start
 #@ 
 #@ # -- End source /proj/cad/synopsys/syn_vL-2016.03-SP3/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-analyze -library WORK -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-elaborate decoder4 -architecture verilog -library DEFAULT
-compile -exact_map
-compile -exact_map -ungroup_all -auto_ungroup area -only_design_rule
-uplevel #0 { report_cell }
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/submodules/equality_comparator/comparator.v}
-change_selection [get_s comp4]
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-change_selection [get_s decoder4]
-change_selection [get_s comparator]
-change_selection [get_s decoder4]
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/submodules/SIPO/SIPO.v}
-remove_design -designs
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-change_selection [get_s decoder4]
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/submodules/equality_comparator/comparator.v}
-change_selection [get_s comp4]
-remove_design -designs
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/submodules/equality_comparator/comparator.v}
-remove_design -designs
-read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v}
-analyze -format verilog {/home/011/e/ex/exh150330/repos/vlsi/decoder4/decoder4.v /home/011/e/ex/exh150330/repos/vlsi/submodules/equality_comparator/comparator.v /home/011/e/ex/exh150330/repos/vlsi/submodules/SIPO/SIPO.v}
-elaborate decoder4 -architecture verilog -library DEFAULT
+read_file -format verilog {/home/011/e/ex/exh150330/repos/vlsi/synopsys/total_decoder1024.v}
 compile -exact_map -ungroup_all -auto_ungroup area -only_design_rule
 uplevel #0 { report_cell }
