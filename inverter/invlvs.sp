@@ -26,7 +26,7 @@
 *       TRANSISTOR CARDS
 *
 *
-MT1	out	in	gnd!	gnd!	nfet	L=0.12U	W=1.1U
+MT1	out	in	gnd!	gnd!	nfet	L=0.12U	W=0.48U
 + wt=1.1e-06 rf=0 nrs=0.208531 nrd=0.208531 ngcon=1 nf=1 mSwitch=0 m=1 blockParasiticsBetween="PC sub" PWORIENT=1 PLORIENT=1
 MT0	out	in	vdd!	vdd!	pfet	L=0.12U	W=1.35U
 + wt=1.35e-06 rf=0 nrs=0.168582 nrd=0.168582 ngcon=1 nf=1 mSwitch=0 m=1 blockParasiticsBetween="PC sub" PWORIENT=1 PLORIENT=1
