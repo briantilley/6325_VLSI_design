@@ -1,7 +1,7 @@
-cUiSelectCellP {nand2}
+cUiMoveCellToBin {nand2} {Ignore}
 cUiSetViewStatus {nand2} {layout} {1}
-cUiSetViewStatus {nand2} {} {0}
-cUiSetViewStatus {nand2} {abstract.pin} {3}
-cUiSetViewStatus {nand2} {abstract.ext} {1}
-cUiSetViewStatus {nand2} {abstract} {1}
+cUiSetViewStatus {nand2} {schematic} {1}
+cUiSetViewStatus {nand2} {abstract.pin} {35}
+cUiSetViewStatus {nand2} {abstract.ext} {33}
+cUiSetViewStatus {nand2} {abstract} {33}
 cUiSetViewStatus {nand2} {abstract.ver} {0}
