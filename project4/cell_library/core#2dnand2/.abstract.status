@@ -1,0 +1,6 @@
+cUiSetViewStatus {core-nand2} {layout} {0}
+cUiSetViewStatus {core-nand2} {} {0}
+cUiSetViewStatus {core-nand2} {abstract.pin} {0}
+cUiSetViewStatus {core-nand2} {abstract.ext} {0}
+cUiSetViewStatus {core-nand2} {abstract} {33}
+cUiSetViewStatus {core-nand2} {abstract.ver} {0}

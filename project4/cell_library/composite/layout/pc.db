@@ -1,0 +1,18 @@
+#
+proj4_cell_lib nand2 layout
+I7
+#
+proj4_cell_lib oai211 layout
+I1
+#
+proj4_cell_lib mux2to1 layout
+I5
+#
+proj4_cell_lib oai21 layout
+I4
+#
+proj4_cell_lib aoi22 layout
+I3
+#
+proj4_cell_lib xor2 layout
+I2

@@ -1,0 +1,6 @@
+cUiSetViewStatus {core-inv} {layout} {0}
+cUiSetViewStatus {core-inv} {} {0}
+cUiSetViewStatus {core-inv} {abstract.pin} {0}
+cUiSetViewStatus {core-inv} {abstract.ext} {0}
+cUiSetViewStatus {core-inv} {abstract} {33}
+cUiSetViewStatus {core-inv} {abstract.ver} {0}
