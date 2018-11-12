@@ -2,16 +2,20 @@ $example HSPICE setup file
 
 $transistor model
 .include "~/cad/spice/model013.lib"
-.include invlvs.sp
+.include d_ff.sp
 
 .global vdd! gnd!
 .option post runlvl=5
 
-xi in out inv
+uut D R clk Q d_ff
 
 vdd vdd! gnd! 1.2v
-vin in gnd! pwl(0ns 1.2v 1ns 1.2v 1.05ns 0v 6ns 0v 6.05ns 1.2v 12ns 1.2v)
-cout out gnd! 100f
+
+d-in D gnd! pwl()
+r-in R gnd! pwl()
+c-in clk gnd! pwl()
+
+cout out gnd! 80f
 
 
 
@@ -28,7 +32,7 @@ cout out gnd! 100f
 
 
 
-
+* 0ns 1.2v 1ns 1.2v 1.05ns 0v 6ns 0v 6.05ns 1.2v 12ns 1.2v
 
 $transient analysis
 .tr 100ps 12ns
