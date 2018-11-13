@@ -14,8 +14,8 @@ vdd vdd! gnd! 1.2v
 * data
 vd_in D gnd! pwl(
 +	0ns 1.2v
-+	19ns 1.2v
-+	19.05ns 0v
++	19.905ns 1.2v
++	19.955ns 0v
 +	40ns 0v
 + )
 
@@ -28,7 +28,7 @@ vr_in R gnd! pwl(
 + )
 
 * clock
-vc_in clk gnd! pulse(0v 1.2v 4.9ns 50ps 50ps 4.9ns 10ns)
+vc_in clk gnd! pulse(0v 1.2v 4.95ns 50ps 50ps 4.9ns 10ns)
 
 * load capacitance
 cout Q gnd! 80f
