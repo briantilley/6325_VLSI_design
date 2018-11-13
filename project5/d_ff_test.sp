@@ -1,25 +1,36 @@
 $example HSPICE setup file
 
-$transistor model
+* transistor model and d_ff cell netlist
 .include "~/cad/spice/model013.lib"
 .include d_ff.sp
 
 .global vdd! gnd!
 .option post runlvl=5
 
+.param vdd=1.2
+
 uut D R clk Q d_ff
 
 vdd vdd! gnd! 1.2v
 
-d-in D gnd! pwl()
-r-in R gnd! pwl()
-c-in clk gnd! pwl()
+d-in D gnd! pwl(0ns vdd 2ns vdd 2.05ns 0 71ns 0 71.05ns vdd 100ns vdd)
+r-in R gnd! pwl(0ns 0 5ns 0 5.05ns vdd 25ns vdd 25.05ns 0
+		41ns 0 41.05ns vdd 47 vdd 47.05ns 0 51ns 0 51.05ns vdd
+		61ns vdd 61.05ns 0 67ns 0 67.05ns vdd 100ns vdd)
+c-in clk gnd! pulse(0 vdd 4.9ns 50ps 50ps 4.9ns 10ns)
 
+* load
 cout out gnd! 80f
 
+* analysis
+.tran 10ps 100ns
 
-
-
+* measurements
+.measure
+.measure
+.measure
+.measure
+.measure
 
 
 
@@ -34,10 +45,10 @@ cout out gnd! 80f
 
 * 0ns 1.2v 1ns 1.2v 1.05ns 0v 6ns 0v 6.05ns 1.2v 12ns 1.2v
 
-$transient analysis
+* transient analysis
 .tr 100ps 12ns
-$example of parameter sweep, replace numeric value W of pfet with WP in invlvs.sp
-$.tr 100ps 12ns sweep WP 1u 9u 0.5u
+* example of parameter sweep, replace numeric value W of pfet with WP in invlvs.sp
+* .tr 100ps 12ns sweep WP 1u 9u 0.5u
 
 .measure tran trise trig v(in) val=0.6v fall=1 targ v(out) val=0.6v rise=1 $measure tlh at 0.6v
 .measure tran tfall trig v(in) val=0.6v rise=1 targ v(out) val=0.6v fall=1 $measure tpl at 0.6v
@@ -45,12 +56,12 @@ $.tr 100ps 12ns sweep WP 1u 9u 0.5u
 .measure tdiff param='abs(trise-tfall)' $calculate delay difference
 .measure delay param='max(trise,tfall)' $calculate worst case delay
 
-$ method 1
+*  method 1
 .measure tran iavg avg i(vdd) from=0 to=10n $average current in one clock cycle
 .measure energy param='1.2*iavg*10n' $calculate energy in one clock cycle
 .measure edp1 param='abs(delay*energy)'
 
-$ method 2
+*  method 2
 .measure tran t1 when v(in)=1.19 fall=1
 .measure tran t2 when v(out)=1.19 rise=1
 .measure tran t3 when v(in)=0.01 rise=1
