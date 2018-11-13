@@ -2,3 +2,4 @@ transcript
 *.bak
 *.cdslck
 *.cd-
+*.~lock*
