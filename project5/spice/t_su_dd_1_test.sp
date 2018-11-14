@@ -14,8 +14,8 @@ vdd vdd! gnd! 1.2v
 * data
 vd_in D gnd! pwl(
 +	0ns 0v
-+	9.8405ns 0v
-+	9.8905ns 1.2v
++	9.7955ns 0v
++	9.8455ns 1.2v
 +	20ns 1.2v
 + )
 
@@ -45,5 +45,8 @@ cout Q gnd! 80f
 * t_clk_Q to verify successful latch
 .measure tran t_clk_Q trig v(clk) val=0.6v td=5ns fall=1
 +	targ v(Q) val=0.6v td=5ns rise=1
+
+* t_delay to find optimal delay time
+.measure t_delay param='t_su_1+t_clk_Q'
 
 .end
