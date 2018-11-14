@@ -14,8 +14,20 @@ vdd vdd! gnd! 1.2v
 * data
 vd_in D gnd! pwl(
 +	0ns 1.2v
+
+* * uncomment these lines to demonstrate drop-dead setup time to latch in a 0
+* +	19.9004 1.2v
+* +	19.9504 0v
+
+* uncomment these lines to demonstrate optimal setup time to latch in a 0
 +	19.8754ns 1.2v
 +	19.9254ns 0v
+
+* * uncomment these lines to demonstrate optimal hold time to latch in a 1
+* * (Q will not transition from 1)
+* +	19.9005 1.2v
+* +	19.9505 0v
+
 +	40ns 0v
 + )
 
