@@ -14,8 +14,8 @@ vdd vdd! gnd! 1.2v
 * data
 vd_in D gnd! pwl(
 +	0ns 1.2v
-+	19.905ns 1.2v
-+	19.955ns 0v
++	19.9004ns 1.2v
++	19.9504ns 0v
 +	40ns 0v
 + )
 
