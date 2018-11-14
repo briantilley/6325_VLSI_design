@@ -1,0 +1,10 @@
+Tsu_dd(0):      -0.4 ps
+Tsu_dd(1):       9.5 ps
+Tsu_opt(0):      24.6 ps
+Tsu_opt(1):      54.5 ps
+Thold(0):        0.5 ps        
+Thold(1):       -10 ps
+T_clk->Q(0):     216 ps
+T_clk->Q(1):     235 ps
+T_D(0):          240 ps
+T_D(1):          290 ps
