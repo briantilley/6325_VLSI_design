@@ -1,0 +1,24 @@
+#
+brian xor2 layout
+I9
+#
+brian oai211 layout
+I8
+#
+brian oai21 layout
+I7
+#
+brian nor2 layout
+I5
+#
+brian nand2 layout
+I2
+#
+brian mux2to1 layout
+I4
+#
+brian inv layout
+I3
+#
+brian aoi22 layout
+I1

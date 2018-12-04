@@ -1,0 +1,11 @@
+\o Program:		@(#)$CDS: libManager.exe version 5.0.2 01/23/2007 12:28 (ocelot-linux.Cadence.COM) $
+\o Sub version:		sub-version 03.01-s042
+\o Arguments:		-unmapped -mpssession icfb58741 -mpshost engnx12.utdallas.edu 
+\o Working Directory:	engnx12.utdallas.edu:/home/011/e/ex/exh150330/cad/cadence/brian
+\o Extended color mode (TrueColor 32 0x52) in use.
+\o Library Manager customization server connected.
+MPS service: map window
+\o Log file is "/home/011/e/ex/exh150330/cad/cadence/brian/libManager.log".
+Opening libManager window.
+No main selection
+\o libManager is exiting.
