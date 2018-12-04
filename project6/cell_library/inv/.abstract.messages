@@ -5,6 +5,4 @@ cUiAddMessageView {inv} {abstract.ext} {604} {(ABS-604): Cell inv: extracting ne
 cUiAddMessageView {inv} {abstract.ext} {604} {(ABS-604): Cell inv: extracting net a, 2 of 4}
 cUiAddMessageView {inv} {abstract.ext} {604} {(ABS-604): Cell inv: extracting net gnd!, 3 of 4}
 cUiAddMessageView {inv} {abstract.ext} {604} {(ABS-604): Cell inv: extracting net vdd!, 4 of 4}
-cUiAddMessageView {inv} {abstract} {1079} {(ABS-1079): Cell inv: prBoundary x dimension 1.44 is not a multiple of Metal1 pitch 0.32}
-cUiAddMessageView {inv} {abstract} {1079} {(ABS-1079): Cell inv: prBoundary y dimension 6.7 is not a multiple of Metal2 pitch 0.48}
 cUiAddMessageView {inv} {abstract} {914} {(ABS-914): Cell inv: predefined site core will be used}
