@@ -1,0 +1,11 @@
+cUiAddMessageView {d_ff} {abstract.pin} {515} {(ABS-515): Cell d_ff: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {d_ff} {abstract.pin} {501} {(ABS-501): Cell d_ff: 6 existing terminals, no pins will be added}
+cUiAddMessageView {d_ff} {abstract.pin} {1007} {(ABS-1007): Cell d_ff: schematic and abstract.pin views terminal clk have different types}
+cUiAddMessageView {d_ff} {abstract.ext} {602} {(ABS-602): Cell d_ff: extracting 6 nets}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net Q, 1 of 6}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net R, 2 of 6}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net D, 3 of 6}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net clk, 4 of 6}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net gnd!, 5 of 6}
+cUiAddMessageView {d_ff} {abstract.ext} {604} {(ABS-604): Cell d_ff: extracting net vdd!, 6 of 6}
+cUiAddMessageView {d_ff} {abstract} {914} {(ABS-914): Cell d_ff: predefined site core will be used}

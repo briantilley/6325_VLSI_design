@@ -1,0 +1,7 @@
+cUiSelectCellP {d_ff}
+cUiSetViewStatus {d_ff} {layout} {1}
+cUiSetViewStatus {d_ff} {schematic} {1}
+cUiSetViewStatus {d_ff} {abstract.pin} {3}
+cUiSetViewStatus {d_ff} {abstract.ext} {1}
+cUiSetViewStatus {d_ff} {abstract} {1}
+cUiSetViewStatus {d_ff} {abstract.ver} {0}

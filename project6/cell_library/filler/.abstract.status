@@ -1,8 +1,6 @@
-cUiMoveCellToBin {Filler} {Block}
-cUiSelectCellP {Filler}
-cUiSetViewStatus {Filler} {Layout} {1}
-cUiSetViewStatus {Filler} {} {0}
-cUiSetViewStatus {Filler} {abstract.pin} {3}
-cUiSetViewStatus {Filler} {abstract.ext} {1}
-cUiSetViewStatus {Filler} {abstract} {1}
-cUiSetViewStatus {Filler} {abstract.ver} {0}
+cUiSetViewStatus {filler} {layout} {0}
+cUiSetViewStatus {filler} {schematic} {0}
+cUiSetViewStatus {filler} {abstract.pin} {35}
+cUiSetViewStatus {filler} {abstract.ext} {33}
+cUiSetViewStatus {filler} {abstract} {33}
+cUiSetViewStatus {filler} {abstract.ver} {0}
