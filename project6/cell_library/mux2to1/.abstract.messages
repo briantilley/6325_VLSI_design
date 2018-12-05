@@ -1,0 +1,10 @@
+cUiAddMessageView {mux2to1} {abstract.pin} {515} {(ABS-515): Cell mux2to1: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {mux2to1} {abstract.pin} {501} {(ABS-501): Cell mux2to1: 6 existing terminals, no pins will be added}
+cUiAddMessageView {mux2to1} {abstract.ext} {602} {(ABS-602): Cell mux2to1: extracting 6 nets}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net a, 1 of 6}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net s, 2 of 6}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net out, 3 of 6}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net b, 4 of 6}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net gnd!, 5 of 6}
+cUiAddMessageView {mux2to1} {abstract.ext} {604} {(ABS-604): Cell mux2to1: extracting net vdd!, 6 of 6}
+cUiAddMessageView {mux2to1} {abstract} {914} {(ABS-914): Cell mux2to1: predefined site core will be used}
