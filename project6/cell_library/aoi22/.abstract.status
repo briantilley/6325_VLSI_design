@@ -1,4 +1,4 @@
-cUiSelectCellP {aoi22}
+cUiMoveCellToBin {aoi22} {Ignore}
 cUiSetViewStatus {aoi22} {layout} {1}
 cUiSetViewStatus {aoi22} {schematic} {1}
 cUiSetViewStatus {aoi22} {abstract.pin} {3}

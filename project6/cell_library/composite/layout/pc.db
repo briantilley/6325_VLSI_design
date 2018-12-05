@@ -1,24 +1,27 @@
 #
-brian xor2 layout
+p6 d_ff layout
 I9
 #
-brian oai211 layout
+p6 aoi22 layout
 I8
 #
-brian oai21 layout
+p6 oai21 layout
 I7
 #
-brian nor2 layout
+p6 oai211 layout
+I6
+#
+p6 mux2to1 layout
 I5
 #
-brian nand2 layout
-I2
-#
-brian mux2to1 layout
+p6 xor2 layout
 I4
 #
-brian inv layout
+p6 nor2 layout
 I3
 #
-brian aoi22 layout
+p6 nand2 layout
+I2
+#
+p6 inv layout
 I1
