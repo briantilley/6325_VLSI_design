@@ -1,0 +1,11 @@
+p6 inv abstract 
+p6 oai211 abstract 
+p6 oai21 abstract 
+p6 nand2 abstract 
+p6 mux2to1 abstract 
+p6 xor2 abstract 
+p6 nor2 abstract 
+p6 aoi22 abstract 
+p6 filler abstract 
+p6 core abstract 
+p6 d_ff abstract 
