@@ -1,0 +1,9 @@
+cUiAddMessageView {nor2} {abstract.pin} {515} {(ABS-515): Cell nor2: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {nor2} {abstract.pin} {501} {(ABS-501): Cell nor2: 5 existing terminals, no pins will be added}
+cUiAddMessageView {nor2} {abstract.ext} {602} {(ABS-602): Cell nor2: extracting 5 nets}
+cUiAddMessageView {nor2} {abstract.ext} {604} {(ABS-604): Cell nor2: extracting net b, 1 of 5}
+cUiAddMessageView {nor2} {abstract.ext} {604} {(ABS-604): Cell nor2: extracting net a, 2 of 5}
+cUiAddMessageView {nor2} {abstract.ext} {604} {(ABS-604): Cell nor2: extracting net out, 3 of 5}
+cUiAddMessageView {nor2} {abstract.ext} {604} {(ABS-604): Cell nor2: extracting net gnd!, 4 of 5}
+cUiAddMessageView {nor2} {abstract.ext} {604} {(ABS-604): Cell nor2: extracting net vdd!, 5 of 5}
+cUiAddMessageView {nor2} {abstract} {914} {(ABS-914): Cell nor2: predefined site core will be used}
